@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>IMS222 HTML/CSS Exercise</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="register.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="images/header.jpg">
+            <nav>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="classes.html">classes</a></li>
+                    <li><a href="register.html" class="current">register</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <section class="courses register">
+            <article>
+                <h2 id="course-register">Course Registration </h2>
+                
+                   <form action="https://formsubmit.co/gabelee@miamioh.edu" method="POST" name="registration_form" id="registration_form">
+                    <fieldset>
+                        <label for="classname">Class Name:</label>
+                        <input type="text" name="classname" id="classname" required><br>
+
+
+                        <!-- 1. write <form> and move </form> to line 51 right above </article> and add action, method, name and id attributes inside <form> -->
+                        <!-- 2. add <fieldset> and move </fieldset> to line 51 right above </form> and add the first <label> and <input> tag for classname here -->
+
+                        <!-- 3. copy the following code for the remaining form elements -->
+                        <label for="name">Your Name:</label>
+                        <input type="text" name="name" id="name" required><br>
+                        <label for="email">E-Mail:</label>
+                        <input type="email" name="email" id="email" required><br>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="999-999-9999" required><br>
+                        <label for="hearaboutus">How did you hear about us?</label>
+                        <select name="hearaboutus" id="hearaboutus" required>
+                            <option value="magazine">Magazine Ad</option>
+                            <option value="radio">Radio Ad</option>
+                            <option value="tv">TV Ad</option>
+                            <option value="social">Social Media</option>
+                        </select>
+                        <label for="questions">Questions/Comments:</label>
+                        <textarea name="questions" id="questions" rows="5" class="optional"></textarea>
+                        <label>&nbsp;</label>
+                        <input type="submit" id="submit" value="Submit">
+                       </fieldset>
+                </form>
+                        <!-- 4. write code for submit button here -->
+            </article>
+        </section>
+        <aside>
+            <article class="popular-recipes">
+                <h2>Popular Recipes</h2>
+                <a href="">Yakitori</a>
+                <a href="">Tsukune</a>
+                <a href="">Okonomiyaki</a>
+                <a href="">Mizutaki</a>
+            </article>
+            <article class="contact">
+                <h2>Contact</h2>
+                <p>Yoko's Kitchen<br />
+                    801 E. High St<br />
+                    Oxford, OH<br />
+                </p>
+            </article>
+        </aside>
+        <footer>
+            &copy; 2024 Yoko's Kitchen
+        </footer>
+    </div>
+</body>
+
+</html>
